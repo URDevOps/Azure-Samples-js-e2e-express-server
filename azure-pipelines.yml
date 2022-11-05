@@ -13,7 +13,8 @@ strategy:
       imageName: 'windows-latest'
 
 pool:
-  vmImage: $(imageName)steps:
+  vmImage: $(imageName)
+steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '8.x'
